@@ -17,4 +17,9 @@ We welcome the following types of contributions:
 - Translations
 - Tests
 
-## Getti
+## Getting Started
+
+To get started, fork the project on GitHub and clone it locally on your machine. Then, create a new branch to work on your changes.
+
+```
+git clone https://github.com
