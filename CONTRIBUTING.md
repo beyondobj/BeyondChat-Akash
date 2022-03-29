@@ -34,4 +34,7 @@ Before submitting your pull request, please make sure your changes pass our auto
 
 1. Fork the project on GitHub.
 2. Clone your forked repository locally on your machine.
-3. Create a new branch
+3. Create a new branch from the main branch.
+4. Make your changes on the new branch.
+5. Ensure that your changes adhere to our code style guidelines and pass our automated tests.
+6. Commit your ch
