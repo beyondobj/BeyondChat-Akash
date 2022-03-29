@@ -28,4 +28,10 @@ git checkout -b my-branch-name
 
 ```
 
-Before submitting your pull request, please make sure your changes pass our automated tests and a
+Before submitting your pull request, please make sure your changes pass our automated tests and adhere to our code style guidelines.
+
+## Pull Request Process
+
+1. Fork the project on GitHub.
+2. Clone your forked repository locally on your machine.
+3. Create a new branch
