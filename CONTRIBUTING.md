@@ -42,4 +42,4 @@ Before submitting your pull request, please make sure your changes pass our auto
 
 ## Contact
 
-If you have any question
+If you have any questions or need help getting started, feel free to reach out to me on [Twitter](https://twitter.com/mckaywrigley).
