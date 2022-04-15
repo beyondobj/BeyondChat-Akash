@@ -6,4 +6,9 @@ interface Props {
   error: ErrorMessage;
 }
 
-export const ErrorMessageDiv:
+export const ErrorMessageDiv: FC<Props> = ({ error }) => {
+  return (
+    <div className="mx-6 flex h-full flex-col items-center justify-center text-red-500">
+      <div className="mb-5">
+        <IconCircleX size={36} />
+      </d
