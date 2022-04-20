@@ -15,4 +15,9 @@ export const ErrorMessageDiv: FC<Props> = ({ error }) => {
       <div className="mb-3 text-2xl font-medium">{error.title}</div>
       {error.messageLines.map((line, index) => (
         <div key={index} className="text-center">
-       
+          {' '}
+          {line}{' '}
+        </div>
+      ))}
+      <div className="mt-4 text-xs opacity-50 dark:text-red-400">
+        {error.code ? <i>Code: {error.code}</i> : ''}
