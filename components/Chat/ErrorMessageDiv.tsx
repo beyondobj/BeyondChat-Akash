@@ -21,3 +21,7 @@ export const ErrorMessageDiv: FC<Props> = ({ error }) => {
       ))}
       <div className="mt-4 text-xs opacity-50 dark:text-red-400">
         {error.code ? <i>Code: {error.code}</i> : ''}
+      </div>
+    </div>
+  );
+};
