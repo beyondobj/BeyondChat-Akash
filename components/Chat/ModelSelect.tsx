@@ -10,4 +10,14 @@ interface Props {
   onModelChange: (model: LLM) => void;
 }
 
-export co
+export const ModelSelect: FC<Props> = ({
+  model,
+  models,
+  defaultModelId,
+  onModelChange,
+}) => {
+  const { t } = useTranslation('chat');
+
+  return (
+    <div className="flex flex-col">
+      <label cla
