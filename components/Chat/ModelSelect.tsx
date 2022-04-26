@@ -20,4 +20,7 @@ export const ModelSelect: FC<Props> = ({
 
   return (
     <div className="flex flex-col">
-      <label cla
+      <label className="mb-2 text-left text-neutral-700 dark:text-neutral-400">
+        {t('Model')}
+      </label>
+      <div className="w-full rounded-lg border border-neutral-20
