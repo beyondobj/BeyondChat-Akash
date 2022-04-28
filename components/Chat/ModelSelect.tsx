@@ -30,4 +30,11 @@ export const ModelSelect: FC<Props> = ({
           value={model?.id || defaultModelId}
           onChange={(e) => {
             onModelChange(
-              models.find((model) => mode
+              models.find((model) => model.id === e.target.value) as LLM,
+            );
+          }}
+        >
+          {models.map((model) => (
+            <option
+              key={model.id}
+              value={m
