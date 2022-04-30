@@ -37,4 +37,9 @@ export const ModelSelect: FC<Props> = ({
           {models.map((model) => (
             <option
               key={model.id}
-              value={m
+              value={model.id}
+              className="dark:bg-[#1c1c1c] dark:text-white"
+            >
+              {model.id === defaultModelId
+                ? `Default (${model.name})`
+        
