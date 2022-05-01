@@ -42,4 +42,11 @@ export const ModelSelect: FC<Props> = ({
             >
               {model.id === defaultModelId
                 ? `Default (${model.name})`
-        
+                : model.name}
+            </option>
+          ))}
+        </select>
+      </div>
+    </div>
+  );
+};
