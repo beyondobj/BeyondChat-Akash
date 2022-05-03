@@ -13,4 +13,10 @@ export const PromptList: FC<Props> = ({
   prompts,
   activePromptIndex,
   onSelect,
-  onMo
+  onMouseOver,
+  promptListRef,
+}) => {
+  return (
+    <ul
+      ref={promptListRef}
+      className="z-10 max-h-52 w-full overflow-scroll rounded border border-black/10 bg-white sha
