@@ -31,4 +31,14 @@ export const PromptList: FC<Props> = ({
           } cursor-pointer px-3 py-2 text-sm text-black dark:text-white`}
           onClick={(e) => {
             e.preventDefault();
-      
+            e.stopPropagation();
+            onSelect();
+          }}
+          onMouseEnter={() => onMouseOver(index)}
+        >
+          {prompt.name}
+        </li>
+      ))}
+    </ul>
+  );
+};
