@@ -6,4 +6,7 @@ interface Props {
   onRegenerate: () => void;
 }
 
-export co
+export const Regenerate: FC<Props> = ({ onRegenerate }) => {
+  const { t } = useTranslation('chat');
+  return (
+    <div className="fixed bottom-4 left-0 right-0 ml-auto mr-auto w-full px-2 sm:absolute sm:bot
