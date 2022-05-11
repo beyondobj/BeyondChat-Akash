@@ -14,4 +14,4 @@ export const Regenerate: FC<Props> = ({ onRegenerate }) => {
         {t('Sorry, there was an error.')}
       </div>
       <button
-        c
+        className="flex h-12 w-full items-center justify-center gap-2 rounded-lg border border-b-neutral-300 bg-neutral-100 text-sm font-semibold text-neutral-500 dark:border-none dark:bg-[#333d3d3
