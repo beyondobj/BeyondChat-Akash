@@ -14,4 +14,10 @@ export const Regenerate: FC<Props> = ({ onRegenerate }) => {
         {t('Sorry, there was an error.')}
       </div>
       <button
-        className="flex h-12 w-full items-center justify-center gap-2 rounded-lg border border-b-neutral-300 bg-neutral-100 text-sm font-semibold text-neutral-500 dark:border-none dark:bg-[#333d3d3
+        className="flex h-12 w-full items-center justify-center gap-2 rounded-lg border border-b-neutral-300 bg-neutral-100 text-sm font-semibold text-neutral-500 dark:border-none dark:bg-[#333d3d3d] dark:text-neutral-200"
+        onClick={onRegenerate}
+      >
+        <IconRefresh />
+        <div>{t('Regenerate response')}</div>
+      </button>
+  
