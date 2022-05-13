@@ -20,4 +20,6 @@ export const Regenerate: FC<Props> = ({ onRegenerate }) => {
         <IconRefresh />
         <div>{t('Regenerate response')}</div>
       </button>
-  
+    </div>
+  );
+};
