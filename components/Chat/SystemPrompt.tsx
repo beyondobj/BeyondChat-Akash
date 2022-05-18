@@ -11,4 +11,10 @@ import {
   useRef,
   useState,
 } from 'react';
-import { 
+import { PromptList } from './PromptList';
+import { VariableModal } from './VariableModal';
+
+interface Props {
+  conversation: Conversation;
+  prompts: Prompt[];
+  onChangePrompt: (prompt: str
