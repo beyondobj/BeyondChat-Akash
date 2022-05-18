@@ -17,4 +17,14 @@ import { VariableModal } from './VariableModal';
 interface Props {
   conversation: Conversation;
   prompts: Prompt[];
-  onChangePrompt: (prompt: str
+  onChangePrompt: (prompt: string) => void;
+}
+
+export const SystemPrompt: FC<Props> = ({
+  conversation,
+  prompts,
+  onChangePrompt,
+}) => {
+  const { t } = useTranslation('chat');
+
+  const [value, setValue] 
