@@ -30,4 +30,6 @@ export const SystemPrompt: FC<Props> = ({
   const [value, setValue] = useState<string>('');
   const [activePromptIndex, setActivePromptIndex] = useState(0);
   const [showPromptList, setShowPromptList] = useState(false);
-  const [promptInp
+  const [promptInputValue, setPromptInputValue] = useState('');
+  const [variables, setVariables] = useState<string[]>([]);
+  const [isModalVisible, setIsModalVisible] = useState(false)
