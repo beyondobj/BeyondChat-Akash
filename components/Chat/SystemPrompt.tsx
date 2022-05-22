@@ -32,4 +32,10 @@ export const SystemPrompt: FC<Props> = ({
   const [showPromptList, setShowPromptList] = useState(false);
   const [promptInputValue, setPromptInputValue] = useState('');
   const [variables, setVariables] = useState<string[]>([]);
-  const [isModalVisible, setIsModalVisible] = useState(false)
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const promptListRef = useRef<HTMLUListElement | null>(null);
+
+  const filteredPrompts = prompts.filter((prompt) =>
+    prompt.nam
