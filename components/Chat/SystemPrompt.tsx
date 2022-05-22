@@ -38,4 +38,8 @@ export const SystemPrompt: FC<Props> = ({
   const promptListRef = useRef<HTMLUListElement | null>(null);
 
   const filteredPrompts = prompts.filter((prompt) =>
-    prompt.nam
+    prompt.name.toLowerCase().includes(promptInputValue.toLowerCase()),
+  );
+
+  const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    const value = e.target.va
