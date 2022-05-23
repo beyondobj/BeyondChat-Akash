@@ -48,4 +48,11 @@ export const SystemPrompt: FC<Props> = ({
     if (value.length > maxLength) {
       alert(
         t(
-          `Prompt limit is {{maxLength}} c
+          `Prompt limit is {{maxLength}} characters. You have entered {{valueLength}} characters.`,
+          { maxLength, valueLength: value.length },
+        ),
+      );
+      return;
+    }
+
+    setValue
