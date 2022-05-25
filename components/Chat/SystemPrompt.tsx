@@ -55,4 +55,13 @@ export const SystemPrompt: FC<Props> = ({
       return;
     }
 
-    setValue
+    setValue(value);
+    updatePromptListVisibility(value);
+
+    if (value.length > 0) {
+      onChangePrompt(value);
+    }
+  };
+
+  const handleInitModal = () => {
+    const selectedPrompt = fi
