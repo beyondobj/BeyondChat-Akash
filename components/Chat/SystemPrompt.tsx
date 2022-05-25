@@ -64,4 +64,6 @@ export const SystemPrompt: FC<Props> = ({
   };
 
   const handleInitModal = () => {
-    const selectedPrompt = fi
+    const selectedPrompt = filteredPrompts[activePromptIndex];
+    setValue((prevVal) => {
+      const newContent = prevVal?.replace(/\/\w*$/, selectedPrompt.content);
