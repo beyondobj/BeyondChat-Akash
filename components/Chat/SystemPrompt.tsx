@@ -67,3 +67,11 @@ export const SystemPrompt: FC<Props> = ({
     const selectedPrompt = filteredPrompts[activePromptIndex];
     setValue((prevVal) => {
       const newContent = prevVal?.replace(/\/\w*$/, selectedPrompt.content);
+      return newContent;
+    });
+    handlePromptSelect(selectedPrompt);
+    setShowPromptList(false);
+  };
+
+  const parseVariables = (content: string) => {
+    const reg
