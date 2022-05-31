@@ -89,4 +89,12 @@ export const SystemPrompt: FC<Props> = ({
     const match = text.match(/\/\w*$/);
 
     if (match) {
-      setShowPro
+      setShowPromptList(true);
+      setPromptInputValue(match[0].slice(1));
+    } else {
+      setShowPromptList(false);
+      setPromptInputValue('');
+    }
+  }, []);
+
+  const handlePromptSelect = (pr
