@@ -82,4 +82,11 @@ export const SystemPrompt: FC<Props> = ({
       foundVariables.push(match[1]);
     }
 
-    return foundVariabl
+    return foundVariables;
+  };
+
+  const updatePromptListVisibility = useCallback((text: string) => {
+    const match = text.match(/\/\w*$/);
+
+    if (match) {
+      setShowPro
