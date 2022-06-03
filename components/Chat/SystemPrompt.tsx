@@ -97,4 +97,9 @@ export const SystemPrompt: FC<Props> = ({
     }
   }, []);
 
-  const handlePromptSelect = (pr
+  const handlePromptSelect = (prompt: Prompt) => {
+    const parsedVariables = parseVariables(prompt.content);
+    setVariables(parsedVariables);
+
+    if (parsedVariables.length > 0) {
+      setIsModa
