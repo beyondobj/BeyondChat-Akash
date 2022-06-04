@@ -102,4 +102,11 @@ export const SystemPrompt: FC<Props> = ({
     setVariables(parsedVariables);
 
     if (parsedVariables.length > 0) {
-      setIsModa
+      setIsModalVisible(true);
+    } else {
+      const updatedContent = value?.replace(/\/\w*$/, prompt.content);
+
+      setValue(updatedContent);
+      onChangePrompt(updatedContent);
+
+    
