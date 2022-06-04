@@ -109,4 +109,9 @@ export const SystemPrompt: FC<Props> = ({
       setValue(updatedContent);
       onChangePrompt(updatedContent);
 
-    
+      updatePromptListVisibility(prompt.content);
+    }
+  };
+
+  const handleSubmit = (updatedVariables: string[]) => {
+    const newContent = value?.replace
