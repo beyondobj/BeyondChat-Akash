@@ -120,4 +120,12 @@ export const SystemPrompt: FC<Props> = ({
     });
 
     setValue(newContent);
-    onCha
+    onChangePrompt(newContent);
+
+    if (textareaRef && textareaRef.current) {
+      textareaRef.current.focus();
+    }
+  };
+
+  const handleKeyDown = (e: KeyboardEvent<HTMLTextAreaElement>) => {
+ 
