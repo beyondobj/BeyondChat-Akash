@@ -114,4 +114,10 @@ export const SystemPrompt: FC<Props> = ({
   };
 
   const handleSubmit = (updatedVariables: string[]) => {
-    const newContent = value?.replace
+    const newContent = value?.replace(/{{(.*?)}}/g, (match, variable) => {
+      const index = variables.indexOf(variable);
+      return updatedVariables[index];
+    });
+
+    setValue(newContent);
+    onCha
