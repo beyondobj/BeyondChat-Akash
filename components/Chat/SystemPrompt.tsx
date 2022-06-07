@@ -128,4 +128,8 @@ export const SystemPrompt: FC<Props> = ({
   };
 
   const handleKeyDown = (e: KeyboardEvent<HTMLTextAreaElement>) => {
- 
+    if (showPromptList) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        setActivePromptIndex((prevIndex) =>
+          prevIndex < prompts.length - 1
