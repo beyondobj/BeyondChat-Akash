@@ -132,4 +132,9 @@ export const SystemPrompt: FC<Props> = ({
       if (e.key === 'ArrowDown') {
         e.preventDefault();
         setActivePromptIndex((prevIndex) =>
-          prevIndex < prompts.length - 1
+          prevIndex < prompts.length - 1 ? prevIndex + 1 : prevIndex,
+        );
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        setActivePromptIndex((prevIndex) =>
+          prevInde
