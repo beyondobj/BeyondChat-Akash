@@ -142,4 +142,9 @@ export const SystemPrompt: FC<Props> = ({
       } else if (e.key === 'Tab') {
         e.preventDefault();
         setActivePromptIndex((prevIndex) =>
-    
+          prevIndex < prompts.length - 1 ? prevIndex + 1 : 0,
+        );
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        handleInitModal();
+ 
