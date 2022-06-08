@@ -137,4 +137,9 @@ export const SystemPrompt: FC<Props> = ({
       } else if (e.key === 'ArrowUp') {
         e.preventDefault();
         setActivePromptIndex((prevIndex) =>
-          prevInde
+          prevIndex > 0 ? prevIndex - 1 : prevIndex,
+        );
+      } else if (e.key === 'Tab') {
+        e.preventDefault();
+        setActivePromptIndex((prevIndex) =>
+    
