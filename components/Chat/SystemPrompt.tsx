@@ -147,4 +147,14 @@ export const SystemPrompt: FC<Props> = ({
       } else if (e.key === 'Enter') {
         e.preventDefault();
         handleInitModal();
- 
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        setShowPromptList(false);
+      } else {
+        setActivePromptIndex(0);
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (texta
