@@ -160,4 +160,13 @@ export const SystemPrompt: FC<Props> = ({
     if (textareaRef && textareaRef.current) {
       textareaRef.current.style.height = 'inherit';
       textareaRef.current.style.height = `${textareaRef.current?.scrollHeight}px`;
+    }
+  }, [value]);
+
+  useEffect(() => {
+    if (conversation.prompt) {
+      setValue(conversation.prompt);
+    } else {
+      setValue(DEFAULT_SYSTEM_PROMPT);
+    }
   
