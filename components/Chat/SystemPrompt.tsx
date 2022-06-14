@@ -169,4 +169,10 @@ export const SystemPrompt: FC<Props> = ({
     } else {
       setValue(DEFAULT_SYSTEM_PROMPT);
     }
-  
+  }, [conversation]);
+
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent) => {
+      if (
+        promptListRef.current &&
+        !promptL
