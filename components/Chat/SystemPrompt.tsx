@@ -181,4 +181,13 @@ export const SystemPrompt: FC<Props> = ({
       }
     };
 
-    window.addEventListener('click', handleOutside
+    window.addEventListener('click', handleOutsideClick);
+
+    return () => {
+      window.removeEventListener('click', handleOutsideClick);
+    };
+  }, []);
+
+  return (
+    <div className="flex flex-col">
+   
