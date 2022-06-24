@@ -201,4 +201,10 @@ export const SystemPrompt: FC<Props> = ({
           bottom: `${textareaRef?.current?.scrollHeight}px`,
           maxHeight: '300px',
           overflow: `${
-            textareaRef.current && textareaRef.current.scrollHeig
+            textareaRef.current && textareaRef.current.scrollHeight > 400
+              ? 'auto'
+              : 'hidden'
+          }`,
+        }}
+        placeholder={
+          t(`Enter a prompt or type "/" to select a prompt...`) 
