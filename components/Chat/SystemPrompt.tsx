@@ -207,4 +207,12 @@ export const SystemPrompt: FC<Props> = ({
           }`,
         }}
         placeholder={
-          t(`Enter a prompt or type "/" to select a prompt...`) 
+          t(`Enter a prompt or type "/" to select a prompt...`) || ''
+        }
+        value={t(value) || ''}
+        rows={1}
+        onChange={handleChange}
+        onKeyDown={handleKeyDown}
+      />
+
+      {showPromptList && filteredPrompt
