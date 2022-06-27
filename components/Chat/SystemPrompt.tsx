@@ -221,4 +221,12 @@ export const SystemPrompt: FC<Props> = ({
             activePromptIndex={activePromptIndex}
             prompts={filteredPrompts}
             onSelect={handleInitModal}
-            onMo
+            onMouseOver={setActivePromptIndex}
+            promptListRef={promptListRef}
+          />
+        </div>
+      )}
+
+      {isModalVisible && (
+        <VariableModal
+          prompt={prompts[acti
