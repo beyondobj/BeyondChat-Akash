@@ -229,4 +229,12 @@ export const SystemPrompt: FC<Props> = ({
 
       {isModalVisible && (
         <VariableModal
-          prompt={prompts[acti
+          prompt={prompts[activePromptIndex]}
+          variables={variables}
+          onSubmit={handleSubmit}
+          onClose={() => setIsModalVisible(false)}
+        />
+      )}
+    </div>
+  );
+};
