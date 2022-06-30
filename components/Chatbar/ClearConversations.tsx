@@ -7,4 +7,9 @@ interface Props {
   onClearConversations: () => void;
 }
 
-export const ClearConve
+export const ClearConversations: FC<Props> = ({ onClearConversations }) => {
+  const [isConfirming, setIsConfirming] = useState<boolean>(false);
+
+  const { t } = useTranslation('sidebar');
+
+  const handleCle
