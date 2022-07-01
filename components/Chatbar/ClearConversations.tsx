@@ -12,4 +12,10 @@ export const ClearConversations: FC<Props> = ({ onClearConversations }) => {
 
   const { t } = useTranslation('sidebar');
 
-  const handleCle
+  const handleClearConversations = () => {
+    onClearConversations();
+    setIsConfirming(false);
+  };
+
+  return isConfirming ? (
+    <div className="flex w-full cursor-pointer items-center rounded-lg 
