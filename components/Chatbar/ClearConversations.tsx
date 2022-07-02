@@ -25,4 +25,7 @@ export const ClearConversations: FC<Props> = ({ onClearConversations }) => {
         {t('Are you sure?')}
       </div>
 
-      
+      <div className="flex w-[40px]">
+        <IconCheck
+          className="ml-auto mr-1 min-w-[20px] text-neutral-400 hover:text-neutral-100"
+          si
