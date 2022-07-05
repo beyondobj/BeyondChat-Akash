@@ -36,4 +36,8 @@ export const ClearConversations: FC<Props> = ({ onClearConversations }) => {
         />
 
         <IconX
-          classNam
+          className="ml-auto min-w-[20px] text-neutral-400 hover:text-neutral-100"
+          size={18}
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsCon
