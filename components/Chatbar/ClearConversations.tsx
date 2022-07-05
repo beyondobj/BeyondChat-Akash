@@ -28,4 +28,12 @@ export const ClearConversations: FC<Props> = ({ onClearConversations }) => {
       <div className="flex w-[40px]">
         <IconCheck
           className="ml-auto mr-1 min-w-[20px] text-neutral-400 hover:text-neutral-100"
-          si
+          size={18}
+          onClick={(e) => {
+            e.stopPropagation();
+            handleClearConversations();
+          }}
+        />
+
+        <IconX
+          classNam
