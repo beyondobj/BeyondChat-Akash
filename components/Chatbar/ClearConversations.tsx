@@ -49,4 +49,7 @@ export const ClearConversations: FC<Props> = ({ onClearConversations }) => {
     <SidebarButton
       text={t('Clear conversations')}
       icon={<IconTrash size={18} />}
- 
+      onClick={() => setIsConfirming(true)}
+    />
+  );
+};
