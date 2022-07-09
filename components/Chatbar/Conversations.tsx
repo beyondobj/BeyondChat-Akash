@@ -19,4 +19,12 @@ export const Conversations: FC<Props> = ({
   loading,
   conversations,
   selectedConversation,
- 
+  onSelectConversation,
+  onDeleteConversation,
+  onUpdateConversation,
+}) => {
+  return (
+    <div className="flex w-full flex-col gap-1">
+      {conversations
+        .slice()
+    
