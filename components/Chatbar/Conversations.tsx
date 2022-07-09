@@ -10,4 +10,13 @@ interface Props {
   onSelectConversation: (conversation: Conversation) => void;
   onDeleteConversation: (conversation: Conversation) => void;
   onUpdateConversation: (
-    
+    conversation: Conversation,
+    data: KeyValuePair,
+  ) => void;
+}
+
+export const Conversations: FC<Props> = ({
+  loading,
+  conversations,
+  selectedConversation,
+ 
