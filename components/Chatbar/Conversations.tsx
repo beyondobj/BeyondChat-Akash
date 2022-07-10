@@ -32,4 +32,8 @@ export const Conversations: FC<Props> = ({
           <ConversationComponent
             key={index}
             selectedConversation={selectedConversation}
-      
+            conversation={conversation}
+            loading={loading}
+            onSelectConversation={onSelectConversation}
+            onDeleteConversation={onDeleteConversation}
+           
