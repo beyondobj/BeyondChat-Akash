@@ -36,4 +36,9 @@ export const Conversations: FC<Props> = ({
             loading={loading}
             onSelectConversation={onSelectConversation}
             onDeleteConversation={onDeleteConversation}
-           
+            onUpdateConversation={onUpdateConversation}
+          />
+        ))}
+    </div>
+  );
+};
