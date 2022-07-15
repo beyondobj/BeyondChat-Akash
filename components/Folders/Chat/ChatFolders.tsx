@@ -5,4 +5,9 @@ import { FC } from 'react';
 import { ChatFolder } from './ChatFolder';
 
 interface Props {
-  search
+  searchTerm: string;
+  conversations: Conversation[];
+  folders: Folder[];
+  onDeleteFolder: (folder: string) => void;
+  onUpdateFolder: (folder: string, name: string) => void;
+  // con
