@@ -10,4 +10,8 @@ interface Props {
   folders: Folder[];
   onDeleteFolder: (folder: string) => void;
   onUpdateFolder: (folder: string, name: string) => void;
-  // con
+  // conversation props
+  selectedConversation: Conversation;
+  loading: boolean;
+  onSelectConversation: (conversation: Conversation) => void;
+  onDeleteConversation: (conversation: Conver
