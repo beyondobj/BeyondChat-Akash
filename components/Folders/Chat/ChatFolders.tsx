@@ -14,4 +14,13 @@ interface Props {
   selectedConversation: Conversation;
   loading: boolean;
   onSelectConversation: (conversation: Conversation) => void;
-  onDeleteConversation: (conversation: Conver
+  onDeleteConversation: (conversation: Conversation) => void;
+  onUpdateConversation: (
+    conversation: Conversation,
+    data: KeyValuePair,
+  ) => void;
+}
+
+export const ChatFolders: FC<Props> = ({
+  searchTerm,
+  co
