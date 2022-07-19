@@ -23,4 +23,13 @@ interface Props {
 
 export const ChatFolders: FC<Props> = ({
   searchTerm,
-  co
+  conversations,
+  folders,
+  onDeleteFolder,
+  onUpdateFolder,
+  // conversation props
+  selectedConversation,
+  loading,
+  onSelectConversation,
+  onDeleteConversation,
+  onUpdateConver
