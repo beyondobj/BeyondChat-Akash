@@ -32,4 +32,11 @@ export const ChatFolders: FC<Props> = ({
   loading,
   onSelectConversation,
   onDeleteConversation,
-  onUpdateConver
+  onUpdateConversation,
+}) => {
+  return (
+    <div className="flex w-full flex-col pt-2">
+      {folders.map((folder, index) => (
+        <ChatFolder
+          key={index}
+          searchT
