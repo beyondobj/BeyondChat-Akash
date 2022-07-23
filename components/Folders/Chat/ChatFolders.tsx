@@ -39,4 +39,8 @@ export const ChatFolders: FC<Props> = ({
       {folders.map((folder, index) => (
         <ChatFolder
           key={index}
-          searchT
+          searchTerm={searchTerm}
+          conversations={conversations.filter((c) => c.folderId)}
+          currentFolder={folder}
+          onDeleteFolder={onDeleteFolder}
+          onUpd
