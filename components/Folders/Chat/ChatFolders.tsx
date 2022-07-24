@@ -43,4 +43,8 @@ export const ChatFolders: FC<Props> = ({
           conversations={conversations.filter((c) => c.folderId)}
           currentFolder={folder}
           onDeleteFolder={onDeleteFolder}
-          onUpd
+          onUpdateFolder={onUpdateFolder}
+          // conversation props
+          selectedConversation={selectedConversation}
+          loading={loading}
+          onSelectConversat
