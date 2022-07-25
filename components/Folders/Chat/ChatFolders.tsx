@@ -47,4 +47,11 @@ export const ChatFolders: FC<Props> = ({
           // conversation props
           selectedConversation={selectedConversation}
           loading={loading}
-          onSelectConversat
+          onSelectConversation={onSelectConversation}
+          onDeleteConversation={onDeleteConversation}
+          onUpdateConversation={onUpdateConversation}
+        />
+      ))}
+    </div>
+  );
+};
