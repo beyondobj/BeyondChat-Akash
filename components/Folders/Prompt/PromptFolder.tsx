@@ -194,3 +194,20 @@ export const PromptFolder: FC<Props> = ({
       </div>
 
       {isOpen
+        ? prompts.map((prompt, index) => {
+            if (prompt.folderId === currentFolder.id) {
+              return (
+                <div key={index} className="ml-5 gap-2 border-l pl-2">
+                  <PromptComponent
+                    prompt={prompt}
+                    onDeletePrompt={onDeletePrompt}
+                    onUpdatePrompt={onUpdatePrompt}
+                  />
+                </div>
+              );
+            }
+          })
+        : null}
+    </>
+  );
+};
