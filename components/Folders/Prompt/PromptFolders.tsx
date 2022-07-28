@@ -10,4 +10,12 @@ interface Props {
   onDeleteFolder: (folder: string) => void;
   onUpdateFolder: (folder: string, name: string) => void;
   // prompt props
-  onD
+  onDeletePrompt: (prompt: Prompt) => void;
+  onUpdatePrompt: (prompt: Prompt) => void;
+}
+
+export const PromptFolders: FC<Props> = ({
+  searchTerm,
+  prompts,
+  folders,
+  onDel
