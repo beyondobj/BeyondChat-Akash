@@ -18,4 +18,12 @@ export const PromptFolders: FC<Props> = ({
   searchTerm,
   prompts,
   folders,
-  onDel
+  onDeleteFolder,
+  onUpdateFolder,
+  // prompt props
+  onDeletePrompt,
+  onUpdatePrompt,
+}) => {
+  return (
+    <div className="flex w-full flex-col pt-2">
+      {folders.map((folder, index) => (
