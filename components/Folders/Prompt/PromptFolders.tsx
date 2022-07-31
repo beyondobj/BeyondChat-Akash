@@ -32,4 +32,8 @@ export const PromptFolders: FC<Props> = ({
           searchTerm={searchTerm}
           prompts={prompts.filter((p) => p.folderId)}
           currentFolder={folder}
-          o
+          onDeleteFolder={onDeleteFolder}
+          onUpdateFolder={onUpdateFolder}
+          // prompt props
+          onDeletePrompt={onDeletePrompt}
+          onUpdatePrompt={onUpdatePro
