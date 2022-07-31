@@ -27,3 +27,9 @@ export const PromptFolders: FC<Props> = ({
   return (
     <div className="flex w-full flex-col pt-2">
       {folders.map((folder, index) => (
+        <PromptFolder
+          key={index}
+          searchTerm={searchTerm}
+          prompts={prompts.filter((p) => p.folderId)}
+          currentFolder={folder}
+          o
