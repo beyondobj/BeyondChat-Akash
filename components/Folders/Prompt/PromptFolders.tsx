@@ -36,4 +36,9 @@ export const PromptFolders: FC<Props> = ({
           onUpdateFolder={onUpdateFolder}
           // prompt props
           onDeletePrompt={onDeletePrompt}
-          onUpdatePrompt={onUpdatePro
+          onUpdatePrompt={onUpdatePrompt}
+        />
+      ))}
+    </div>
+  );
+};
