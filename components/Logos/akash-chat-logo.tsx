@@ -62,4 +62,8 @@ export const AkashChatLogo = (props: any) => {
           x1="90.2749"
           y1="164.815"
           x2="120.418"
-          y2="131
+          y2="131.008"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#FF414C" />
+          <stop offset="1" stop-color="#FF414C" stop-opaci
