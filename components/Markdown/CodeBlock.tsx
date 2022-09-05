@@ -9,4 +9,10 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 
 interface Props {
-  language: st
+  language: string;
+  value: string;
+}
+
+export const CodeBlock: FC<Props> = memo(({ language, value }) => {
+  const { t } = useTranslation('markdown');
+  const [isCopied, setIsCopied] = us
