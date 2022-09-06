@@ -22,4 +22,12 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
       return;
     }
 
-    navigator.clipboard.w
+    navigator.clipboard.writeText(value).then(() => {
+      setIsCopied(true);
+
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 2000);
+    });
+  };
+  const downloadAsFi
