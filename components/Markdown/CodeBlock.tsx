@@ -30,4 +30,9 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
       }, 2000);
     });
   };
-  const downloadAsFi
+  const downloadAsFile = () => {
+    const fileExtension = programmingLanguages[language] || '.file';
+    const suggestedFileName = `file-${generateRandomString(
+      3,
+      true,
+    )}${fileExten
