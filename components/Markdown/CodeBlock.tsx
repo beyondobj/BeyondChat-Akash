@@ -35,4 +35,11 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
     const suggestedFileName = `file-${generateRandomString(
       3,
       true,
-    )}${fileExten
+    )}${fileExtension}`;
+    const fileName = window.prompt(
+      t('Enter file name') || '',
+      suggestedFileName,
+    );
+
+    if (!fileName) {
+      // user pressed cancel on prompt
