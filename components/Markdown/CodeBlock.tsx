@@ -43,3 +43,10 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
 
     if (!fileName) {
       // user pressed cancel on prompt
+      return;
+    }
+
+    const blob = new Blob([value], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.downl
