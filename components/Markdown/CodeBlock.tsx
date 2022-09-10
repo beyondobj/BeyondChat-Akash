@@ -49,4 +49,10 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
     const blob = new Blob([value], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.downl
+    link.download = fileName;
+    link.href = url;
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revoke
