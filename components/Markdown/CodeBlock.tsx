@@ -55,4 +55,9 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    URL.revoke
+    URL.revokeObjectURL(url);
+  };
+  return (
+    <div className="codeblock relative font-sans text-[16px]">
+      <div className="flex items-center justify-between py-1.5 px-4">
+      
