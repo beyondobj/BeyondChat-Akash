@@ -71,4 +71,12 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
             {isCopied ? t('Copied!') : t('Copy code')}
           </button>
           <button
-            className="flex items-center rounded bg-none p-1 text-xs text-w
+            className="flex items-center rounded bg-none p-1 text-xs text-white"
+            onClick={downloadAsFile}
+          >
+            <IconDownload size={18} />
+          </button>
+        </div>
+      </div>
+
+      <Syn
