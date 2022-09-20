@@ -88,3 +88,5 @@ export const CodeBlock: FC<Props> = memo(({ language, value }) => {
       </SyntaxHighlighter>
     </div>
   );
+});
+CodeBlock.displayName = 'CodeBlock';
