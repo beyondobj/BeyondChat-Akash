@@ -16,4 +16,10 @@ export const Navbar: FC<Props> = ({
       <div className="mr-4"></div>
 
       {/*hide temporary
-      <div className="max-w-[240px] overflow-hidden text-ellipsis
+      <div className="max-w-[240px] overflow-hidden text-ellipsis whitespace-nowrap">
+        {selectedConversation.name}
+  </div>*/}
+
+      <IconPlus
+        className="mr-8 cursor-pointer hover:text-neutral-400"
+   
