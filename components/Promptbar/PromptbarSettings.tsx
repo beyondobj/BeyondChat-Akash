@@ -1,3 +1,7 @@
 import { FC } from 'react';
 
-interface
+interface Props {}
+
+export const PromptbarSettings: FC<Props> = () => {
+  return <div></div>;
+};
