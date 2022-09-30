@@ -8,4 +8,12 @@ interface Props {
   onDeletePrompt: (prompt: Prompt) => void;
 }
 
-exp
+export const Prompts: FC<Props> = ({
+  prompts,
+  onUpdatePrompt,
+  onDeletePrompt,
+}) => {
+  return (
+    <div className="flex w-full flex-col gap-1">
+      {prompts
+        .slice()
