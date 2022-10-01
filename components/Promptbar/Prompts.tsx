@@ -22,4 +22,10 @@ export const Prompts: FC<Props> = ({
           <PromptComponent
             key={index}
             prompt={prompt}
-            onUpdatePrompt={onUpdatePrompt
+            onUpdatePrompt={onUpdatePrompt}
+            onDeletePrompt={onDeletePrompt}
+          />
+        ))}
+    </div>
+  );
+};
