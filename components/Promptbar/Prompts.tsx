@@ -17,3 +17,9 @@ export const Prompts: FC<Props> = ({
     <div className="flex w-full flex-col gap-1">
       {prompts
         .slice()
+        .reverse()
+        .map((prompt, index) => (
+          <PromptComponent
+            key={index}
+            prompt={prompt}
+            onUpdatePrompt={onUpdatePrompt
