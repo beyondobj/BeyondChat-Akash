@@ -11,4 +11,12 @@ interface Props {
 export const Import: FC<Props> = ({ onImport }) => {
   const { t } = useTranslation('sidebar');
   return (
-   
+    <>
+      <input
+        id="import-file"
+        className="sr-only"
+        tabIndex={-1}
+        type="file"
+        accept=".json"
+        onChange={(e) => {
+          if (
