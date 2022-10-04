@@ -5,4 +5,10 @@ import { FC } from 'react';
 import { SidebarButton } from '../Sidebar/SidebarButton';
 
 interface Props {
- 
+  onImport: (data: SupportedExportFormats) => void;
+}
+
+export const Import: FC<Props> = ({ onImport }) => {
+  const { t } = useTranslation('sidebar');
+  return (
+   
