@@ -19,4 +19,9 @@ export const Import: FC<Props> = ({ onImport }) => {
         type="file"
         accept=".json"
         onChange={(e) => {
-          if (
+          if (!e.target.files?.length) return;
+
+          const file = e.target.files[0];
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            let json = JSO
