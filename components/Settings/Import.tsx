@@ -24,4 +24,12 @@ export const Import: FC<Props> = ({ onImport }) => {
           const file = e.target.files[0];
           const reader = new FileReader();
           reader.onload = (e) => {
-            let json = JSO
+            let json = JSON.parse(e.target?.result as string);
+            onImport(json);
+          };
+          reader.readAsText(file);
+        }}
+      />
+
+      <SidebarButton
+       
