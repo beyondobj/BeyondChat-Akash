@@ -8,4 +8,8 @@ interface Props {
   onApiKeyChange: (apiKey: string) => void;
 }
 
-export const Key: FC<Props> = ({ apiKey, onApiKeyChange 
+export const Key: FC<Props> = ({ apiKey, onApiKeyChange }) => {
+  const { t } = useTranslation('sidebar');
+  const [isChanging, setIsChanging] = useState(false);
+  const [newKey, setNewKey] = useState(apiKey);
+  const inputRef = useRef<HTML
