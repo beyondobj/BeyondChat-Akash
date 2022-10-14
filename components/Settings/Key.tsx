@@ -12,4 +12,10 @@ export const Key: FC<Props> = ({ apiKey, onApiKeyChange }) => {
   const { t } = useTranslation('sidebar');
   const [isChanging, setIsChanging] = useState(false);
   const [newKey, setNewKey] = useState(apiKey);
-  const inputRef = useRef<HTML
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const handleEnterDown = (e: KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      handleUpdateKey(newKey);
+    }
