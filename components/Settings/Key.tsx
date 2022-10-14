@@ -19,3 +19,13 @@ export const Key: FC<Props> = ({ apiKey, onApiKeyChange }) => {
       e.preventDefault();
       handleUpdateKey(newKey);
     }
+  };
+
+  const handleUpdateKey = (newKey: string) => {
+    onApiKeyChange(newKey.trim());
+    setIsChanging(false);
+  };
+
+  useEffect(() => {
+    if (isChanging) {
+      inputRef.current?.
