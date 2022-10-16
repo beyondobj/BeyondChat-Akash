@@ -28,4 +28,9 @@ export const Key: FC<Props> = ({ apiKey, onApiKeyChange }) => {
 
   useEffect(() => {
     if (isChanging) {
-      inputRef.current?.
+      inputRef.current?.focus();
+    }
+  }, [isChanging]);
+
+  return isChanging ? (
+    <div className="duration:200 flex w-full cursor-pointer items-center rounded-md py-3 px-3 transition-colors hover:bg-
