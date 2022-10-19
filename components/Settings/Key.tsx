@@ -52,4 +52,12 @@ export const Key: FC<Props> = ({ apiKey, onApiKeyChange }) => {
           size={18}
           onClick={(e) => {
             e.stopPropagation();
-            
+            handleUpdateKey(newKey);
+          }}
+        />
+
+        <IconX
+          className="ml-auto min-w-[20px] text-neutral-400 hover:text-neutral-100"
+          size={18}
+          onClick={(e) => {
+      
