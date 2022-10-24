@@ -1,2 +1,8 @@
 import { IconX } from '@tabler/icons-react';
-import { us
+import { useTranslation } from 'next-i18next';
+import { FC } from 'react';
+
+interface Props {
+  placeholder: string;
+  searchTerm: string;
+  onSearch: (searchTerm: string) 
