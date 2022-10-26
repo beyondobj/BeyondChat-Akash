@@ -11,4 +11,15 @@ interface Props {
 export const Search: FC<Props> = ({ placeholder, searchTerm, onSearch }) => {
   const { t } = useTranslation('sidebar');
 
-  const handleSearchChange = (e: React.ChangeEvent<HTMLInputEleme
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    onSearch(e.target.value);
+  };
+
+  const clearSearch = () => {
+    onSearch('');
+  };
+
+  return (
+    <div className="relative flex items-center">
+      <input
+  
