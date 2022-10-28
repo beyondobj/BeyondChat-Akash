@@ -31,4 +31,11 @@ export const Search: FC<Props> = ({ placeholder, searchTerm, onSearch }) => {
 
       {searchTerm && (
         <IconX
-          className="absolute right-4 cursor-po
+          className="absolute right-4 cursor-pointer text-neutral-300 hover:text-neutral-400"
+          size={18}
+          onClick={clearSearch}
+        />
+      )}
+    </div>
+  );
+};
