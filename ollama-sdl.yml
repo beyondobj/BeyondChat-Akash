@@ -1,0 +1,10 @@
+---
+version: '2.0'
+services:
+  ollama:
+    image: ollama/ollama
+    expose:
+      - port: 11434
+        as: 11434
+        to:
+          - global: 
