@@ -7,4 +7,10 @@ services:
       - port: 11434
         as: 11434
         to:
-          - global: 
+          - global: true
+    command:
+      - 'bash'
+      - '-c'
+    args:
+      - 'ollama serve > /dev/null 2>&1 & sleep 10 && ollama pull mistral && sleep infinity;'
+      # replace 
