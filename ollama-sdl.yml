@@ -21,4 +21,12 @@ profiles:
         cpu:
           units: 12
         memory:
-         
+          size: 16Gi
+        storage:
+          - size: 50Gi
+        gpu:
+          units: 1
+          attributes:
+            vendor:
+              nvidia:
+                - A1
