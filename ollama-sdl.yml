@@ -13,4 +13,12 @@ services:
       - '-c'
     args:
       - 'ollama serve > /dev/null 2>&1 & sleep 10 && ollama pull mistral && sleep infinity;'
-      # replace 
+      # replace mistral with any other dataset you want to pull on first start
+profiles:
+  compute:
+    ollama:
+      resources:
+        cpu:
+          units: 12
+        memory:
+         
