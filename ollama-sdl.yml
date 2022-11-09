@@ -39,4 +39,5 @@ profiles:
 deployment:
   ollama:
     dcloud:
-      profile: ollam
+      profile: ollama
+      count: 1
