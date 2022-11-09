@@ -29,4 +29,14 @@ profiles:
           attributes:
             vendor:
               nvidia:
-                - A1
+                - A100
+  placement:
+    dcloud:
+      pricing:
+        ollama:
+          denom: uakt
+          amount: 1000
+deployment:
+  ollama:
+    dcloud:
+      profile: ollam
