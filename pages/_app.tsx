@@ -6,4 +6,9 @@ import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({ subsets: ['latin'] });
 
-fun
+function App({ Component, pageProps }: AppProps<{}>) {
+  return (
+    <div className={inter.className}>
+      <Toaster />
+      <Component {...pageProps} />
+  
