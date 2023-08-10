@@ -7,4 +7,9 @@ import { Tiktoken, init } from '@dqbd/tiktoken/lite/init';
 import wasm from '../../node_modules/@dqbd/tiktoken/lite/tiktoken_bg.wasm?module';
 
 export const config = {
-  runtime:
+  runtime: 'edge',
+};
+
+const handler = async (req: Request): Promise<Response> => {
+  try {
+    const { model, messages, key, prompt } = (await req.json()) as ChatB
