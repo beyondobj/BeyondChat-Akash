@@ -26,4 +26,9 @@ const handler = async (req: Request): Promise<Response> => {
       promptToSend = DEFAULT_SYSTEM_PROMPT;
     }
 
-    const p
+    const prompt_tokens = encoding.encode(promptToSend);
+
+    let tokenCount = prompt_tokens.length;
+    let messagesToSend: Message[] = [];
+    if (messages.length === 1) {
+      // i
