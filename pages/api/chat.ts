@@ -17,4 +17,13 @@ const handler = async (req: Request): Promise<Response> => {
     await init((imports) => WebAssembly.instantiate(wasm, imports));
     const encoding = new Tiktoken(
       tiktokenModel.bpe_ranks,
-      tiktokenModel.specia
+      tiktokenModel.special_tokens,
+      tiktokenModel.pat_str,
+    );
+
+    let promptToSend = prompt;
+    if (!promptToSend) {
+      promptToSend = DEFAULT_SYSTEM_PROMPT;
+    }
+
+    const p
