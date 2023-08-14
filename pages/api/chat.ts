@@ -35,4 +35,8 @@ const handler = async (req: Request): Promise<Response> => {
       messages[0].content = `${promptToSend} - ${messages[0].content}`;
     }
 
-    for (let i = me
+    for (let i = messages.length - 1; i >= 0; i--) {
+      const message = messages[i];
+      const tokens = encoding.encode(message.content);
+
+      if (tokenCount + tokens.length + 1000 > m
