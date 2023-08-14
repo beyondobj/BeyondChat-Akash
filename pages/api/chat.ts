@@ -39,4 +39,13 @@ const handler = async (req: Request): Promise<Response> => {
       const message = messages[i];
       const tokens = encoding.encode(message.content);
 
-      if (tokenCount + tokens.length + 1000 > m
+      if (tokenCount + tokens.length + 1000 > model.tokenLimit) {
+        break;
+      }
+      tokenCount += tokens.length;
+      messagesToSend = [message, ...messagesToSend];
+    }
+
+    encoding.free();
+
+    const 
