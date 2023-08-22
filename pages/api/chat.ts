@@ -59,3 +59,6 @@ const handler = async (req: Request): Promise<Response> => {
       return new Response('Error', { status: 500 });
     }
   }
+};
+
+export default handler;
