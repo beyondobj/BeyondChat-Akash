@@ -418,3 +418,159 @@ const Home: React.FC<HomeProps> = ({
 
     setFolders(updatedFolders);
     saveFolders(updatedFolders);
+  };
+
+  // CONVERSATION OPERATIONS  --------------------------------------------
+
+  const handleNewConversation = () => {
+    const lastConversation = conversations[conversations.length - 1];
+
+    const newConversation: Conversation = {
+      id: uuidv4(),
+      name: `${t('New Conversation')}`,
+      messages: [],
+      model: lastConversation?.model || {
+        id: LLMS[defaultModelId].id,
+        name: LLMS[defaultModelId].name,
+        maxLength: LLMS[defaultModelId].maxLength,
+        tokenLimit: LLMS[defaultModelId].tokenLimit,
+      },
+      prompt: DEFAULT_SYSTEM_PROMPT,
+      folderId: null,
+    };
+
+    const updatedConversations = [...conversations, newConversation];
+
+    setSelectedConversation(newConversation);
+    setConversations(updatedConversations);
+
+    saveConversation(newConversation);
+    saveConversations(updatedConversations);
+
+    setLoading(false);
+  };
+
+  const handleDeleteConversation = (conversation: Conversation) => {
+    const updatedConversations = conversations.filter(
+      (c) => c.id !== conversation.id,
+    );
+    setConversations(updatedConversations);
+    saveConversations(updatedConversations);
+
+    if (updatedConversations.length > 0) {
+      setSelectedConversation(
+        updatedConversations[updatedConversations.length - 1],
+      );
+      saveConversation(updatedConversations[updatedConversations.length - 1]);
+    } else {
+      setSelectedConversation({
+        id: uuidv4(),
+        name: 'New conversation',
+        messages: [],
+        model: LLMS[defaultModelId],
+        prompt: DEFAULT_SYSTEM_PROMPT,
+        folderId: null,
+      });
+      localStorage.removeItem('selectedConversation');
+    }
+  };
+
+  const handleUpdateConversation = (
+    conversation: Conversation,
+    data: KeyValuePair,
+  ) => {
+    const updatedConversation = {
+      ...conversation,
+      [data.key]: data.value,
+    };
+
+    const { single, all } = updateConversation(
+      updatedConversation,
+      conversations,
+    );
+
+    setSelectedConversation(single);
+    setConversations(all);
+  };
+
+  const handleClearConversations = () => {
+    setConversations([]);
+    localStorage.removeItem('conversationHistory');
+
+    setSelectedConversation({
+      id: uuidv4(),
+      name: 'New conversation',
+      messages: [],
+      model: LLMS[defaultModelId],
+      prompt: DEFAULT_SYSTEM_PROMPT,
+      folderId: null,
+    });
+    localStorage.removeItem('selectedConversation');
+
+    const updatedFolders = folders.filter((f) => f.type !== 'chat');
+    setFolders(updatedFolders);
+    saveFolders(updatedFolders);
+  };
+
+  const handleEditMessage = (message: Message, messageIndex: number) => {
+    if (selectedConversation) {
+      const updatedMessages = selectedConversation.messages
+        .map((m, i) => {
+          if (i < messageIndex) {
+            return m;
+          }
+        })
+        .filter((m) => m) as Message[];
+
+      const updatedConversation = {
+        ...selectedConversation,
+        messages: updatedMessages,
+      };
+
+      const { single, all } = updateConversation(
+        updatedConversation,
+        conversations,
+      );
+
+      setSelectedConversation(single);
+      setConversations(all);
+
+      setCurrentMessage(message);
+    }
+  };
+
+  // PROMPT OPERATIONS --------------------------------------------
+
+  const handleCreatePrompt = () => {
+    const newPrompt: Prompt = {
+      id: uuidv4(),
+      name: `Prompt ${prompts.length + 1}`,
+      description: '',
+      content: '',
+      model: LLMS[defaultModelId],
+      folderId: null,
+    };
+
+    const updatedPrompts = [...prompts, newPrompt];
+
+    setPrompts(updatedPrompts);
+    savePrompts(updatedPrompts);
+  };
+
+  const handleUpdatePrompt = (prompt: Prompt) => {
+    const updatedPrompts = prompts.map((p) => {
+      if (p.id === prompt.id) {
+        return prompt;
+      }
+
+      return p;
+    });
+
+    setPrompts(updatedPrompts);
+    savePrompts(updatedPrompts);
+  };
+
+  const handleDeletePrompt = (prompt: Prompt) => {
+    const updatedPrompts = prompts.filter((p) => p.id !== prompt.id);
+    setPrompts(updatedPrompts);
+    savePrompts(updatedPrompts);
