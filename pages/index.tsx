@@ -254,3 +254,167 @@ const Home: React.FC<HomeProps> = ({
 
         if (updatedConversations.length === 0) {
           updatedConversations.push(updatedConversation);
+        }
+
+        setConversations(updatedConversations);
+        saveConversations(updatedConversations);
+
+        setLoading(false);
+        setMessageIsStreaming(false);
+      }
+    }
+  };
+
+  // FETCH MODELS ----------------------------------------------
+
+  const fetchModels = async (key: string) => {
+    const error = {
+      title: t('Error fetching models.'),
+      code: null,
+      messageLines: ['There was an error fetching the models.'],
+    } as ErrorMessage;
+
+    const response = await fetch('/api/models', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        key,
+      }),
+    });
+
+    if (!response.ok) {
+      try {
+        const data = await response.json();
+        Object.assign(error, {
+          code: data.error?.code,
+          messageLines: [data.error?.message],
+        });
+      } catch (e) {}
+      setModelError(error);
+      return;
+    }
+
+    const data = await response.json();
+
+    if (!data) {
+      setModelError(error);
+      return;
+    }
+
+    const modelOrder = [
+      'mistral',
+      'nous-hermes2-mixtral',
+      'mixtral',
+      'dolphin-mixtral',
+    ];
+    const sortedData = data.sort((a: LLM, b: LLM) => {
+      return modelOrder.indexOf(a.id) - modelOrder.indexOf(b.id);
+    });
+
+    setModels(data);
+    setModelError(null);
+  };
+
+  // BASIC HANDLERS --------------------------------------------
+
+  const handleLightMode = (mode: 'dark' | 'light') => {
+    setLightMode(mode);
+    localStorage.setItem('theme', mode);
+  };
+
+  const handleApiKeyChange = (apiKey: string) => {
+    setApiKey(apiKey);
+    localStorage.setItem('apiKey', apiKey);
+  };
+
+  const handleToggleChatbar = () => {
+    setShowSidebar(!showSidebar);
+    localStorage.setItem('showChatbar', JSON.stringify(!showSidebar));
+  };
+
+  const handleTogglePromptbar = () => {
+    setShowPromptbar(!showPromptbar);
+    localStorage.setItem('showPromptbar', JSON.stringify(!showPromptbar));
+  };
+
+  const handleExportData = () => {
+    exportData();
+  };
+
+  const handleImportConversations = (data: SupportedExportFormats) => {
+    const { history, folders, prompts }: LatestExportFormat = importData(data);
+
+    setConversations(history);
+    setSelectedConversation(history[history.length - 1]);
+    setFolders(folders);
+    setPrompts(prompts);
+  };
+
+  const handleSelectConversation = (conversation: Conversation) => {
+    setSelectedConversation(conversation);
+    saveConversation(conversation);
+  };
+
+  // FOLDER OPERATIONS  --------------------------------------------
+
+  const handleCreateFolder = (name: string, type: FolderType) => {
+    const newFolder: Folder = {
+      id: uuidv4(),
+      name,
+      type,
+    };
+
+    const updatedFolders = [...folders, newFolder];
+
+    setFolders(updatedFolders);
+    saveFolders(updatedFolders);
+  };
+
+  const handleDeleteFolder = (folderId: string) => {
+    const updatedFolders = folders.filter((f) => f.id !== folderId);
+    setFolders(updatedFolders);
+    saveFolders(updatedFolders);
+
+    const updatedConversations: Conversation[] = conversations.map((c) => {
+      if (c.folderId === folderId) {
+        return {
+          ...c,
+          folderId: null,
+        };
+      }
+
+      return c;
+    });
+    setConversations(updatedConversations);
+    saveConversations(updatedConversations);
+
+    const updatedPrompts: Prompt[] = prompts.map((p) => {
+      if (p.folderId === folderId) {
+        return {
+          ...p,
+          folderId: null,
+        };
+      }
+
+      return p;
+    });
+    setPrompts(updatedPrompts);
+    savePrompts(updatedPrompts);
+  };
+
+  const handleUpdateFolder = (folderId: string, name: string) => {
+    const updatedFolders = folders.map((f) => {
+      if (f.id === folderId) {
+        return {
+          ...f,
+          name,
+        };
+      }
+
+      return f;
+    });
+
+    setFolders(updatedFolders);
+    saveFolders(updatedFolders);
