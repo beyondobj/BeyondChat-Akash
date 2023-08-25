@@ -1,3 +1,7 @@
 {
   "Stop Generating": "إيقاف التوليد",
-  "Prompt limit is {{maxLength}} characters": "حرفًا {{
+  "Prompt limit is {{maxLength}} characters": "حرفًا {{maxLength}} حد المطالبة هو",
+  "System Prompt": "مطالبة النظام",
+  "Enter a prompt": "أدخل المطالبة",
+  "Regenerate response": "إعادة توليد الرد",
+  "Sorry, there was an error.": "عذرًا، حدث خط
