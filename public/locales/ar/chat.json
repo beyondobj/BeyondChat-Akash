@@ -4,4 +4,10 @@
   "System Prompt": "مطالبة النظام",
   "Enter a prompt": "أدخل المطالبة",
   "Regenerate response": "إعادة توليد الرد",
-  "Sorry, there was an error.": "عذرًا، حدث خط
+  "Sorry, there was an error.": "عذرًا، حدث خطأ",
+  "Model": "النموذج",
+  "Conversation": "المحادثة",
+  "OR": "أو",
+  "Loading...": "...جاري التحميل",
+  "Error fetching models.": "خطأ في جلب النماذج",
+  "AI": 
