@@ -10,4 +10,9 @@
   "OR": "أو",
   "Loading...": "...جاري التحميل",
   "Error fetching models.": "خطأ في جلب النماذج",
-  "AI": 
+  "AI": "الذكاء الاصطناعي",
+  "You": "أنت",
+  "Cancel": "Cancel",
+  "Save & Submit": "Save & Submit",
+
+  "click if using a .env.local file": ".env.local انقر إذا
