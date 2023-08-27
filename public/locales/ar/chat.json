@@ -15,4 +15,6 @@
   "Cancel": "Cancel",
   "Save & Submit": "Save & Submit",
 
-  "click if using a .env.local file": ".env.local انقر إذا
+  "click if using a .env.local file": ".env.local انقر إذا كنت تستخدم ملف",
+
+  "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "حرفًا {{maxLength}}  حد الرسالة هو {{valueLength}} لقد أدخ
