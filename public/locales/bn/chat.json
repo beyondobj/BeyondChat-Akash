@@ -3,3 +3,7 @@
   "Prompt limit is {{maxLength}} characters": "নির্দেশনা (বার্তা) সীমা সর্বোচ্চ {{maxLength}} অক্ষর",
   "System Prompt": "সিস্টেম নির্দেশনা (বার্তা)",
   "Enter a prompt": "একটি নির্দেশনা (বার্তা) দিন",
+  "Regenerate response": "বার্তা আবার জেনারেট করুন",
+  "Sorry, there was an error.": "দুঃখিত, কোনো একটি সমস্যা হয়েছে।",
+  "Model": "মডেল",
+  "Conversation": "আলাপচারিতা",
