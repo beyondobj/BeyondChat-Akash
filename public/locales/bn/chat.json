@@ -17,4 +17,5 @@
   "click if using a .env.local file": "click if using a .env.local file",
   "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "বার্তার সর্বোচ্চ সীমা হল {{maxLength}} অক্ষর৷ আপনি {{valueLength}} অক্ষর লিখেছেন।",
   "Please enter a message": "দয়া করে একটি মেসেজ লিখুন",
-  "Are you sure you want to clear all messages?":
+  "Are you sure you want to clear all messages?": "সমস্ত বার্তা মুছে ফেলতে আপনি কি নিশ্চিত?"
+}
