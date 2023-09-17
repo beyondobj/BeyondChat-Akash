@@ -9,4 +9,9 @@
   "Conversation": "Konversation",
   "OR": "ODER",
   "Loading...": "Laden...",
-  "Error fetching models.": "Fehler beim Abru
+  "Error fetching models.": "Fehler beim Abrufen der Sprachmodelle.",
+  "AI": "KI",
+  "You": "Du",
+  "Cancel": "Cancel",
+  "Save & Submit": "Save & Submit",
+  "click if using a .env.local file": "click if using a .en
