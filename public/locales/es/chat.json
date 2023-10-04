@@ -6,4 +6,10 @@
   "Regenerate response": "Regenerar respuesta",
   "Sorry, there was an error.": "Lo sentimos, ha ocurrido un error.",
   "Model": "Modelo",
-  "Conversa
+  "Conversation": "Conversación",
+  "OR": "O",
+  "Loading...": "Cargando...",
+  "Error fetching models.": "Error al obtener los modelos.",
+  "AI": "IA",
+  "You": "Tú",
+  "Cancel"
