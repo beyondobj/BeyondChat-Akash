@@ -12,4 +12,7 @@
   "Error fetching models.": "Error al obtener los modelos.",
   "AI": "IA",
   "You": "Tú",
-  "Cancel"
+  "Cancel": "Cancel",
+  "Save & Submit": "Save & Submit",
+  "click if using a .env.local file": "haz clic si estás utilizando un archivo .env.local",
+  "Message limit is {{maxLengt
