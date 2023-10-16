@@ -5,4 +5,9 @@
   "Search conversations...": "Buscar conversaciones...",
   "OpenAI API Key": "Llave de API de OpenAI",
   "Import data": "Importar conversaciones",
-  "Are you sure?": "¿Estás seguro
+  "Are you sure?": "¿Estás seguro?",
+  "Clear conversations": "Borrar conversaciones",
+  "Export data": "Exportar conversaciones",
+  "Dark mode": "Modo oscuro",
+  "Light mode": "Modo claro"
+}
