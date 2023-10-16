@@ -1,2 +1,4 @@
 {
-  "St
+  "Stop Generating": "Interrompre la génération",
+  "Prompt limit is {{maxLength}} characters": "La limite du prompt est de {{maxLength}} caractères",
+  "System Prompt": "Prompt du systè
