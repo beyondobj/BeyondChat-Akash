@@ -9,4 +9,9 @@
   "Conversation": "Conversation",
   "OR": "OU",
   "Loading...": "Chargement...",
-  "Error fetching models.": "Erreur lors de la récupération des modè
+  "Error fetching models.": "Erreur lors de la récupération des modèles.",
+  "AI": "IA",
+  "You": "Vous",
+  "Cancel": "Cancel",
+  "Save & Submit": "Save & Submit",
+  "click if using a .env.local file": "click if using a .env.local fi
