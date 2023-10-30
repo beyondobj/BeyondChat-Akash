@@ -17,4 +17,5 @@
   "click if using a .env.local file": "click if using a .env.local file",
   "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "La limite de message est de {{maxLength}} caractères. Vous avez saisi {{valueLength}} caractères.",
   "Please enter a message": "Veuillez entrer un message",
-  "Are you sure you want to clear all messages?": "Êtes-vous sûr de voulo
+  "Are you sure you want to clear all messages?": "Êtes-vous sûr de vouloir effacer tous les messages ?"
+}
