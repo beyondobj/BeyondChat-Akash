@@ -1,4 +1,9 @@
 {
   "New prompt": "פקודת מכונה חדשה",
   "New folder": "תיקיה חדשה",
-  "No prompts.": "לא נמצאו 
+  "No prompts.": "לא נמצאו פקודות מכונות",
+  "Search prompts...": "חיפוש פקודות...",
+  "Name": "שם",
+  "Description": "תיאור",
+  "A description for your prompt.": "תיאור שורת הפקודה למכונה",
+  "Pr
