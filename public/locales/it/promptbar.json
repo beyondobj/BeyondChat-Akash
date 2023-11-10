@@ -4,4 +4,7 @@
   "No prompts.": "Nessun prompt.",
   "Search prompts...": "Cerca prompts...",
   "Name": "Nome",
-  "Descr
+  "Description": "Descrizione",
+  "A description for your prompt.": "Descrizione del tuo prompt.",
+  "Prompt": "Prompt",
+  "Prompt content. Use {{}} to denote a variable. Ex: {{name}}
