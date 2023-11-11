@@ -1,2 +1,6 @@
 {
-  "Stop Generati
+  "Stop Generating": "回答をストップ",
+  "Prompt limit is {{maxLength}} characters": "プロンプトの文字数は{{maxLength}}文字までです",
+  "System Prompt": "システムのプロンプト",
+  "Enter a prompt": "プロンプトを入力してください",
+  "Regenerate
