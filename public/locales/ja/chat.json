@@ -14,4 +14,6 @@
   "You": "あなた",
   "Cancel": "Cancel",
   "Save & Submit": "Save & Submit",
-  "click if using a .env.local file": "もし.env.localファイルを使用している場合はこちらをクリックしてく
+  "click if using a .env.local file": "もし.env.localファイルを使用している場合はこちらをクリックしてください",
+  "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "メッセージの文字数は{{maxLength}}文字までです。あなたは{{valueLength}}文字を入力しました。",
+  "Please e
