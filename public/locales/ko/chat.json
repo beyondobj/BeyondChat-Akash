@@ -15,4 +15,7 @@
   "Cancel": "Cancel",
   "Save & Submit": "Save & Submit",
   "click if using a .env.local file": "click if using a .env.local file",
-  "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "메시지 제한은 {{maxLeng
+  "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "메시지 제한은 {{maxLength}}자입니다. {{valueLength}}자를 입력했습니다.",
+  "Please enter a message": "메시지를 입력하세요",
+  "Are you sure you want to clear all messages?": "모든 메시지를 지우시겠습니까?"
+}
