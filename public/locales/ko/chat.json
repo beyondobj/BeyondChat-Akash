@@ -14,4 +14,5 @@
   "You": "당신",
   "Cancel": "Cancel",
   "Save & Submit": "Save & Submit",
-  "click
+  "click if using a .env.local file": "click if using a .env.local file",
+  "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "메시지 제한은 {{maxLeng
