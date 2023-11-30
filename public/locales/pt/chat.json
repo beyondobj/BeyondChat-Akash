@@ -4,4 +4,9 @@
   "System Prompt": "Mensagem do sistema",
   "Enter a prompt": "Insira uma mensagem",
   "Regenerate response": "Gerar resposta novamente",
-  "Sorry, 
+  "Sorry, there was an error.": "Desculpe, ocorreu um erro.",
+  "Model": "Modelo",
+  "Conversation": "Conversação",
+  "OR": "Ou",
+  "Loading...": "Carregando...",
+  "Error fetching mod
