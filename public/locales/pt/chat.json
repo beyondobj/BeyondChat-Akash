@@ -1,3 +1,7 @@
 {
   "Stop Generating": "Parar de gerar",
-  "Prompt limit is {{maxLength}} characters": "O limite da mensagem é de {{maxLength}} caracter
+  "Prompt limit is {{maxLength}} characters": "O limite da mensagem é de {{maxLength}} caracteres",
+  "System Prompt": "Mensagem do sistema",
+  "Enter a prompt": "Insira uma mensagem",
+  "Regenerate response": "Gerar resposta novamente",
+  "Sorry, 
