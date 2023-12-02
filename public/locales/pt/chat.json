@@ -14,4 +14,5 @@
   "You": "Você",
   "Cancel": "Cancel",
   "Save & Submit": "Save & Submit",
-  "click if using a .env.local file": "clique se e
+  "click if using a .env.local file": "clique se estiver usando um arquivo .env.local",
+  "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "O limite de mensagens é de {{maxLength}} caracteres. Você inseriu {{val
