@@ -15,4 +15,6 @@
   "Cancel": "Cancel",
   "Save & Submit": "Save & Submit",
   "click if using a .env.local file": "clique se estiver usando um arquivo .env.local",
-  "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "O limite de mensagens é de {{maxLength}} caracteres. Você inseriu {{val
+  "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "O limite de mensagens é de {{maxLength}} caracteres. Você inseriu {{valueLength}} caracteres",
+  "Please enter a message": "Por favor, insira uma mensagem",
+  "Are you sure you want to clear all messages?": "Tem certeza de que deseja limpar todas 
