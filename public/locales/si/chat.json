@@ -3,4 +3,8 @@
   "Prompt limit is {{maxLength}} characters": "වචන සීමාව අනුලකුණු {{maxLength}} කි",
   "System Prompt": "පද්ධති ඉඟිය",
   "Enter a prompt": "ප්‍රේරකයක් ඇතුළු කරන්න",
-  "Regenerate resp
+  "Regenerate response": "ප්‍රතිචාරය පුනර්ජනනය කරන්න",
+  "Sorry, there was an error.": "සමාවන්න, දෝෂයක් ඇති විය.",
+  "Model": "ආකෘතිය",
+  "Conversation": "සංවාදය",
+  "
