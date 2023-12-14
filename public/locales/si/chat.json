@@ -1,3 +1,6 @@
 {
   "Stop Generating": "උත්පාදනය නවත්වන්න",
-  "Prompt limit 
+  "Prompt limit is {{maxLength}} characters": "වචන සීමාව අනුලකුණු {{maxLength}} කි",
+  "System Prompt": "පද්ධති ඉඟිය",
+  "Enter a prompt": "ප්‍රේරකයක් ඇතුළු කරන්න",
+  "Regenerate resp
