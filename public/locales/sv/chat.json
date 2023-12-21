@@ -1,3 +1,6 @@
 {
   "Stop Generating": "Sluta generera",
-  "Prompt limit i
+  "Prompt limit is {{maxLength}} characters": "Din prompt kan inte ha fler än {{maxLength}} tecken",
+  "System Prompt": "System prompt",
+  "Enter a prompt": "Ange en prompt",
+  "Regenerate response": "Återskapa sv
