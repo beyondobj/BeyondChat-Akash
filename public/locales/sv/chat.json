@@ -17,4 +17,5 @@
   "click if using a .env.local file": "klicka om du använder en .env.local-fil",
   "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "Meddelandegränsen är {{maxLength}} tecken. Du har angett {{valueLength}} tecken.",
   "Please enter a message": "Vänligen ange ett meddelande",
-  "Are you sure you want to clear all messages?": "Är du säker på att du vill r
+  "Are you sure you want to clear all messages?": "Är du säker på att du vill rensa alla meddelanden?"
+}
