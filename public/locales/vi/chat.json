@@ -4,4 +4,9 @@
   "System Prompt": "Prompt hệ thống",
   "Enter a prompt": "Nhập một Prompt",
   "Regenerate response": "Tạo lại phản hồi",
-  "Sorry, there was an error.": "Xin lỗi, đã xảy ra l
+  "Sorry, there was an error.": "Xin lỗi, đã xảy ra lỗi.",
+  "Model": "Mô hình",
+  "Conversation": "Cuộc trò chuyện",
+  "OR": "HOẶC",
+  "Loading...": "Đang tải...",
+  "Error fetching models.": "Lỗi khi truy xuất mô hình.",
