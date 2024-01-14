@@ -16,4 +16,6 @@
   "Save & Submit": "Lưu & Gửi",
   "click if using a .env.local file": "Bấm vào đây nếu dùng tệp .env.local",
   "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "Giới hạn tin nhắn là {{maxLength}} ký tự. Bạn đã nhập {{valueLength}} ký tự.",
-  "Ple
+  "Please enter a message": "Vui lòng nhập một tin nhắn",
+  "Are you sure you want to clear all messages?": "Bạn có chắc chắn muốn xóa tất cả tin nhắn không?"
+}
