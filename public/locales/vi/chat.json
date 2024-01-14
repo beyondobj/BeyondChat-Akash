@@ -15,4 +15,5 @@
   "Cancel": "Hủy",
   "Save & Submit": "Lưu & Gửi",
   "click if using a .env.local file": "Bấm vào đây nếu dùng tệp .env.local",
-  "Message 
+  "Message limit is {{maxLength}} characters. You have entered {{valueLength}} characters.": "Giới hạn tin nhắn là {{maxLength}} ký tự. Bạn đã nhập {{valueLength}} ký tự.",
+  "Ple
