@@ -14,4 +14,6 @@
   "AI": "AI",
   "You": "你",
   "Cancel": "取消",
-  "S
+  "Save & Submit": "保存并提交",
+  "click if using a .env.local file": "click if using a .env.local file",
+  "Message limit is {{maxLength}} characters. You have entered {{v
