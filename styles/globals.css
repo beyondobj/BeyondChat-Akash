@@ -34,4 +34,10 @@ html {
 
 @media (max-width: 720px) {
   pre {
-    wid
+    width: calc(100vw - 110px);
+  }
+}
+
+pre:has(div.codeblock) {
+  padding: 0;
+}
