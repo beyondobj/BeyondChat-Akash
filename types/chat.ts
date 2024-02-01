@@ -11,4 +11,14 @@ export interface ChatBody {
   model: LLM;
   messages: Message[];
   key: string;
-  prompt
+  prompt: string;
+}
+
+export interface Conversation {
+  id: string;
+  name: string;
+  messages: Message[];
+  model: LLM;
+  prompt: string;
+  folderId: string | null;
+}
