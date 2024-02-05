@@ -17,4 +17,12 @@ interface ConversationV1 {
   messages: Message[];
 }
 
-export type ExportFormatV1 = ConversationV1[
+export type ExportFormatV1 = ConversationV1[];
+
+////////////////////////////////////////////////////////////////////////////////////////////
+interface ChatFolder {
+  id: number;
+  name: string;
+}
+
+export interface ExportFormat
