@@ -10,4 +10,11 @@ export type SupportedExportFormats =
   | ExportFormatV4;
 export type LatestExportFormat = ExportFormatV4;
 
-/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+interface ConversationV1 {
+  id: number;
+  name: string;
+  messages: Message[];
+}
+
+export type ExportFormatV1 = ConversationV1[
