@@ -25,4 +25,10 @@ interface ChatFolder {
   name: string;
 }
 
-export interface ExportFormat
+export interface ExportFormatV2 {
+  history: Conversation[] | null;
+  folders: ChatFolder[] | null;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+export inter
