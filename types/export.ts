@@ -31,4 +31,13 @@ export interface ExportFormatV2 {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////
-export inter
+export interface ExportFormatV3 {
+  version: 3;
+  history: Conversation[];
+  folders: Folder[];
+}
+
+export interface ExportFormatV4 {
+  version: 4;
+  history: Conversation[];
+  folders: Folder[
