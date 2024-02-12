@@ -12,4 +12,12 @@ export enum LLMID {
   NOUSHERMESMIXTRAL = 'nous-hermes2-mixtral',
 }
 
-// in case the `DEFAULT_MODEL` environment variable is not set or set to an unsupported m
+// in case the `DEFAULT_MODEL` environment variable is not set or set to an unsupported model
+export const fallbackModelID = LLMID.MISTRAL;
+
+export const LLMS: Record<LLMID, LLM> = {
+  [LLMID.MISTRAL]: {
+    id: LLMID.MISTRAL,
+    name: 'Mistral-7B',
+    maxLength: 12000,
+    tok
