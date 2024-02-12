@@ -29,3 +29,11 @@ export const LLMS: Record<LLMID, LLM> = {
     tokenLimit: 4000,
   },
   [LLMID.MIXTRAL]: {
+    id: LLMID.MIXTRAL,
+    name: 'Mixtral',
+    maxLength: 12000,
+    tokenLimit: 4000,
+  },
+  [LLMID.DOLPHINMIXTRAL]: {
+    id: LLMID.DOLPHINMIXTRAL,
+    name: 'Dolphin Mixtral'
