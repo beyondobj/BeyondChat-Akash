@@ -20,4 +20,12 @@ export const LLMS: Record<LLMID, LLM> = {
     id: LLMID.MISTRAL,
     name: 'Mistral-7B',
     maxLength: 12000,
-    tok
+    tokenLimit: 4000,
+  },
+  [LLMID.NOUSHERMESMIXTRAL]: {
+    id: LLMID.NOUSHERMESMIXTRAL,
+    name: 'Nous Hermes 2 Mixtral',
+    maxLength: 12000,
+    tokenLimit: 4000,
+  },
+  [LLMID.MIXTRAL]: {
