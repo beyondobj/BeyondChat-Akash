@@ -5,4 +5,6 @@ export interface Prompt {
   name: string;
   description: string;
   content: string;
-  
+  model: LLM;
+  folderId: string | null;
+}
