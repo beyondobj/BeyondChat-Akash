@@ -65,3 +65,11 @@ export const cleanConversationHistory = (history: any[]): Conversation[] => {
       acc.push(conversation);
       return acc;
     } catch (error) {
+      console.warn(
+        `error while cleaning conversations' history. Removing culprit`,
+        error,
+      );
+    }
+    return acc;
+  }, []);
+};
