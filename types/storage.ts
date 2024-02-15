@@ -6,4 +6,10 @@ import { Prompt } from './prompt';
 export interface LocalStorage {
   apiKey: string;
   conversationHistory: Conversation[];
-  selectedConversati
+  selectedConversation: Conversation;
+  theme: 'light' | 'dark';
+  // added folders (3/23/23)
+  folders: Folder[];
+  // added prompts (3/26/23)
+  prompts: Prompt[];
+  // added showChatbar and showPromptba
