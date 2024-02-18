@@ -5,4 +5,15 @@ interface languageMap {
 export const programmingLanguages: languageMap = {
   javascript: '.js',
   python: '.py',
-  java: '
+  java: '.java',
+  c: '.c',
+  cpp: '.cpp',
+  'c++': '.cpp',
+  'c#': '.cs',
+  ruby: '.rb',
+  php: '.php',
+  swift: '.swift',
+  'objective-c': '.m',
+  kotlin: '.kt',
+  typescript: '.ts',
+ 
