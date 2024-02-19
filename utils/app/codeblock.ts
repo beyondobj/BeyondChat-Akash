@@ -16,4 +16,14 @@ export const programmingLanguages: languageMap = {
   'objective-c': '.m',
   kotlin: '.kt',
   typescript: '.ts',
- 
+  go: '.go',
+  perl: '.pl',
+  rust: '.rs',
+  scala: '.scala',
+  haskell: '.hs',
+  lua: '.lua',
+  shell: '.sh',
+  sql: '.sql',
+  html: '.html',
+  css: '.css',
+  // add more file extensions here, make s
