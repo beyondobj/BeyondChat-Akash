@@ -12,4 +12,13 @@ export const updateConversation = (
     return c;
   });
 
-  saveConversation(updatedCon
+  saveConversation(updatedConversation);
+  saveConversations(updatedConversations);
+
+  return {
+    single: updatedConversation,
+    all: updatedConversations,
+  };
+};
+
+export const saveConversation = (conversatio
