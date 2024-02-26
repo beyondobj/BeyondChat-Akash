@@ -4,4 +4,12 @@ export const updateConversation = (
   updatedConversation: Conversation,
   allConversations: Conversation[],
 ) => {
-  const updatedConvers
+  const updatedConversations = allConversations.map((c) => {
+    if (c.id === updatedConversation.id) {
+      return updatedConversation;
+    }
+
+    return c;
+  });
+
+  saveConversation(updatedCon
