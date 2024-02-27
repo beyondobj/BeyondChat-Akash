@@ -21,4 +21,8 @@ export const updateConversation = (
   };
 };
 
-export const saveConversation = (conversatio
+export const saveConversation = (conversation: Conversation) => {
+  localStorage.setItem('selectedConversation', JSON.stringify(conversation));
+};
+
+export const saveConversations = (conversations: Conversation[]) =>
