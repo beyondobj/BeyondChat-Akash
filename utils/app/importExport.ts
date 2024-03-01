@@ -102,3 +102,25 @@ export const exportData = () => {
   link.style.display = 'none';
   document.body.appendChild(link);
   link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+};
+
+export const importData = (
+  data: SupportedExportFormats,
+): LatestExportFormat => {
+  const cleanedData = cleanData(data);
+  const { history, folders, prompts } = cleanedData;
+
+  const conversations = history;
+  localStorage.setItem('conversationHistory', JSON.stringify(conversations));
+  localStorage.setItem(
+    'selectedConversation',
+    JSON.stringify(conversations[conversations.length - 1]),
+  );
+
+  localStorage.setItem('folders', JSON.stringify(folders));
+  localStorage.setItem('prompts', JSON.stringify(prompts));
+
+  return cleanedData;
+};
