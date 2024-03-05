@@ -12,4 +12,11 @@ export const updatePrompt = (updatedPrompt: Prompt, allPrompts: Prompt[]) => {
   savePrompts(updatedPrompts);
 
   return {
-    single: updatedPr
+    single: updatedPrompt,
+    all: updatedPrompts,
+  };
+};
+
+export const savePrompts = (prompts: Prompt[]) => {
+  localStorage.setItem('prompts', JSON.stringify(prompts));
+};
