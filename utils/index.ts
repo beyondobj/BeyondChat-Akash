@@ -16,4 +16,7 @@ export function throttle<T extends (...args: any[]) => any>(
           func(...args);
           lastRan = Date.now();
         }
-      }, limit - (Date.now() - lastRan))
+      }, limit - (Date.now() - lastRan));
+    }
+  }) as T;
+}
